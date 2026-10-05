@@ -1,0 +1,12 @@
+{
+  "name": "wa-channels-insights",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser extension that reads the WhatsApp Channels you administer from WhatsApp Web and sends the data where you choose.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

@@ -1,0 +1,171 @@
+{
+  "extName": {
+    "message": "WA Channels Insights"
+  },
+  "extDescription": {
+    "message": "Lê do WhatsApp Web aberto os dados dos Canais do WhatsApp que você administra e envia para onde você escolher."
+  },
+  "destination": {
+    "message": "Destino"
+  },
+  "lastRun": {
+    "message": "Última coleta"
+  },
+  "collectNow": {
+    "message": "Coletar agora"
+  },
+  "collecting": {
+    "message": "Coletando…"
+  },
+  "exportJson": {
+    "message": "Exportar JSON"
+  },
+  "copyDiagnostics": {
+    "message": "Copiar diagnóstico"
+  },
+  "readingWhatsApp": {
+    "message": "Lendo o WhatsApp Web…"
+  },
+  "copied": {
+    "message": "Copiado ✓"
+  },
+  "copiedWithError": {
+    "message": "Copiado (com erro) ✓"
+  },
+  "exported": {
+    "message": "Baixado ✓"
+  },
+  "settings": {
+    "message": "Configurações"
+  },
+  "popupNote": {
+    "message": "A extensão só lê o que já está no WhatsApp Web aberto. Abra cada canal uma vez para os posts carregarem; para os insights, abra o canal › Dados do canal."
+  },
+  "noRunYet": {
+    "message": "Nenhuma coleta ainda."
+  },
+  "runOk": {
+    "message": "Última coleta $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "runFailed": {
+    "message": "Falhou $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "notCollected": {
+    "message": "Não coletou"
+  },
+  "justNow": {
+    "message": "agora há pouco"
+  },
+  "minutesAgo": {
+    "message": "há $P1$ min",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "runCounts": {
+    "message": "$P1$ canal(is) · $P2$ post(s) lido(s)",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusNoDestination": {
+    "message": "Sem destino — configure um webhook nas Configurações."
+  },
+  "statusWebhook": {
+    "message": "Enviando para $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNoDestination": {
+    "message": "Nenhum destino configurado. Abra as configurações da extensão e informe a URL do webhook."
+  },
+  "errHttp": {
+    "message": "O destino respondeu com erro $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNetwork": {
+    "message": "Não foi possível falar com o destino ($P1$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNoWhatsAppTab": {
+    "message": "Abra o WhatsApp Web numa aba."
+  },
+  "errReloadTab": {
+    "message": "Recarregue a aba do WhatsApp Web (a extensão foi instalada ou atualizada depois de abri-la)."
+  },
+  "errNotLoaded": {
+    "message": "O WhatsApp Web ainda não carregou"
+  },
+  "errBusy": {
+    "message": "Coleta em andamento."
+  },
+  "errNoChannels": {
+    "message": "Nenhum canal que esta conta administra foi encontrado."
+  },
+  "errPageSilent": {
+    "message": "a página não respondeu (recarregue a aba do WhatsApp Web)"
+  },
+  "optionsTitle": {
+    "message": "Envio"
+  },
+  "optionsIntro": {
+    "message": "Cada coleta é enviada como JSON (POST) para esta URL. A extensão pede permissão para acessá-la quando você salva."
+  },
+  "webhookUrl": {
+    "message": "URL do webhook"
+  },
+  "authorization": {
+    "message": "Cabeçalho Authorization (opcional)"
+  },
+  "authorizationHint": {
+    "message": "Enviado como está, por exemplo \"Bearer <token>\"."
+  },
+  "save": {
+    "message": "Salvar"
+  },
+  "saved": {
+    "message": "Salvo ✓"
+  },
+  "invalidUrl": {
+    "message": "Use uma URL https:// (http:// só para localhost)."
+  },
+  "permissionDenied": {
+    "message": "A permissão para acessar esta URL foi negada."
+  },
+  "integrationActive": {
+    "message": "O envio é feito pela integração \"$P1$\"; o webhook abaixo não é usado.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  }
+}

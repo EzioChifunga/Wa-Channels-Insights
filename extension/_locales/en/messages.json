@@ -1,0 +1,171 @@
+{
+  "extName": {
+    "message": "WA Channels Insights"
+  },
+  "extDescription": {
+    "message": "Reads the data of the WhatsApp Channels you administer from the open WhatsApp Web tab and sends it where you choose."
+  },
+  "destination": {
+    "message": "Destination"
+  },
+  "lastRun": {
+    "message": "Last collection"
+  },
+  "collectNow": {
+    "message": "Collect now"
+  },
+  "collecting": {
+    "message": "Collecting…"
+  },
+  "exportJson": {
+    "message": "Export JSON"
+  },
+  "copyDiagnostics": {
+    "message": "Copy diagnostics"
+  },
+  "readingWhatsApp": {
+    "message": "Reading WhatsApp Web…"
+  },
+  "copied": {
+    "message": "Copied ✓"
+  },
+  "copiedWithError": {
+    "message": "Copied (with error) ✓"
+  },
+  "exported": {
+    "message": "Downloaded ✓"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "popupNote": {
+    "message": "The extension only reads what is already in the open WhatsApp Web. Open each channel once so its posts load; for insights, open the channel › Channel insights."
+  },
+  "noRunYet": {
+    "message": "No collection yet."
+  },
+  "runOk": {
+    "message": "Last collection $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "runFailed": {
+    "message": "Failed $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "notCollected": {
+    "message": "Not collected"
+  },
+  "justNow": {
+    "message": "just now"
+  },
+  "minutesAgo": {
+    "message": "$P1$ min ago",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "runCounts": {
+    "message": "$P1$ channel(s) · $P2$ post(s) read",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusNoDestination": {
+    "message": "No destination — set a webhook in Settings."
+  },
+  "statusWebhook": {
+    "message": "Sending to $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNoDestination": {
+    "message": "No destination set. Open the extension settings and add a webhook URL."
+  },
+  "errHttp": {
+    "message": "The destination answered with error $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNetwork": {
+    "message": "Could not reach the destination ($P1$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errNoWhatsAppTab": {
+    "message": "Open WhatsApp Web in a tab."
+  },
+  "errReloadTab": {
+    "message": "Reload the WhatsApp Web tab (the extension was installed or updated after it was opened)."
+  },
+  "errNotLoaded": {
+    "message": "WhatsApp Web hasn't loaded yet"
+  },
+  "errBusy": {
+    "message": "A collection is already running."
+  },
+  "errNoChannels": {
+    "message": "No channel administered by this account was found."
+  },
+  "errPageSilent": {
+    "message": "the page didn't answer (reload the WhatsApp Web tab)"
+  },
+  "optionsTitle": {
+    "message": "Delivery"
+  },
+  "optionsIntro": {
+    "message": "Each collection is sent as JSON (POST) to this URL. The extension asks for permission to reach it when you save."
+  },
+  "webhookUrl": {
+    "message": "Webhook URL"
+  },
+  "authorization": {
+    "message": "Authorization header (optional)"
+  },
+  "authorizationHint": {
+    "message": "Sent as is, e.g. \"Bearer <token>\"."
+  },
+  "save": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved ✓"
+  },
+  "invalidUrl": {
+    "message": "Use an https:// URL (http:// only for localhost)."
+  },
+  "permissionDenied": {
+    "message": "Permission to reach this URL was denied."
+  },
+  "integrationActive": {
+    "message": "Delivery is handled by the built-in integration \"$P1$\"; the webhook below is not used.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  }
+}

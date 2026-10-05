@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 0; padding: 16px; color: #1f2a24; background: #fff; max-width: 480px; }
+    h1 { font-size: 15px; margin: 0 0 6px; }
+    p { color: #66706b; line-height: 1.4; margin: 0 0 12px; }
+    label { display: block; font-weight: 600; margin: 12px 0 4px; }
+    input { box-sizing: border-box; width: 100%; padding: 7px 8px; border: 1px solid #c9d1cc; border-radius: 6px; font: inherit; background: inherit; color: inherit; }
+    .hint { font-size: 12px; margin: 4px 0 0; }
+    .notice { background: #eef6f1; border-radius: 8px; padding: 8px 10px; color: #1f2a24; }
+    button { margin-top: 14px; padding: 8px 16px; border: 0; border-radius: 8px; background: #2d7a4f; color: #fff; font-weight: 600; cursor: pointer; }
+    #message { margin-left: 8px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1b201d; color: #e6ece8; }
+      p { color: #9aa5a0; }
+      input { border-color: #3a443e; }
+      .notice { background: #24302a; color: #e6ece8; }
+    }
+  </style>
+</head>
+<body>
+  <h1 data-i18n="optionsTitle"></h1>
+  <p id="integration" class="notice" hidden></p>
+  <p data-i18n="optionsIntro"></p>
+  <form id="form">
+    <label for="webhookUrl" data-i18n="webhookUrl"></label>
+    <input id="webhookUrl" type="url" placeholder="https://example.com/wa-channels" />
+    <label for="authorization" data-i18n="authorization"></label>
+    <input id="authorization" type="password" autocomplete="off" placeholder="Bearer …" />
+    <p class="hint" data-i18n="authorizationHint"></p>
+    <button type="submit" data-i18n="save"></button><span id="message"></span>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>

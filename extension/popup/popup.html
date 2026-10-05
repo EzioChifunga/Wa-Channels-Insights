@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px system-ui, sans-serif; width: 300px; margin: 0; padding: 14px; color: #1f2a24; background: #fff; }
+    h1 { font-size: 14px; margin: 0 0 10px; }
+    .row { display: flex; gap: 8px; align-items: baseline; margin: 6px 0; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; transform: translateY(1px); }
+    .ok { background: #2d7a4f; } .error { background: #c0392b; } .neutral { background: #9aa5a0; }
+    .sub { color: #66706b; font-size: 12px; }
+    button { margin-top: 10px; width: 100%; padding: 8px; border: 0; border-radius: 8px; background: #2d7a4f; color: #fff; font-weight: 600; cursor: pointer; }
+    button.secondary { background: transparent; color: #2d7a4f; border: 1px solid #2d7a4f; margin-top: 6px; font-weight: 500; }
+    button:disabled { opacity: .6; cursor: default; }
+    p.note { color: #66706b; font-size: 11px; margin: 12px 0 0; line-height: 1.4; }
+    a { color: #2d7a4f; font-size: 12px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1b201d; color: #e6ece8; }
+      .sub, p.note { color: #9aa5a0; }
+      button.secondary, a { color: #6fc497; border-color: #6fc497; }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <div class="row"><span id="dot-destination" class="dot neutral"></span><div><div id="destination">…</div></div></div>
+  <div class="row"><span id="dot-run" class="dot neutral"></span><div><div id="run">…</div><div id="run-sub" class="sub"></div></div></div>
+  <button id="collect" data-i18n="collectNow"></button>
+  <button id="export" class="secondary" data-i18n="exportJson"></button>
+  <button id="diagnostics" class="secondary" data-i18n="copyDiagnostics"></button>
+  <p class="note" data-i18n="popupNote"></p>
+  <p><a id="settings" href="#" data-i18n="settings"></a></p>
+  <script src="popup.js"></script>
+</body>
+</html>
